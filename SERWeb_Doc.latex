@@ -1,0 +1,393 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\section{SERWeb 酒井体育赛事报名系统}\label{header-n4566}
+
+\tableofcontents
+
+\subsection{1. 需求分析}\label{header-n4569}
+
+\subsubsection{1.1 项目背景}\label{header-n4570}
+
+每年，清华大学举办的``马约翰杯''体育比赛以及清华大学计算机系内举办的``酒井杯''等体育赛事都需要赛前统计报名情况并给予报名人员反馈。目前，问卷星是常用的报名形式。但在很多比赛里，参赛人员需要填写的个人信息完全相同或有大部分重叠，造成不断重复相同工作的情况。同时，组织者给参赛人员回复邮件时，则需要手动添加报名人员邮箱，回复邮件，这项工作单一繁琐，耗费组织人员大量的时间和精力。有时，为了获得特定运动员的报名信息，可能需要大量的中间步骤。
+
+为了改善这一情况，简化报名步骤，提高赛事组织者的工作效率，清华大学计算机系学生会希望建立一个体育赛事报名管理系统，赛事组织者可以在此发布赛事信息及报名通道。同学们可以通过个人
+info
+账号信息登录，在赛事报名界面点击报名，自动完成赛事报名。系统将自动收集报名人员的相关信息，并统一进行回复与管理。
+
+该系统所实现的功能将不仅限于系内学生组织，同样适用于校内其他院系以及其他类似体育赛事的报名和管理等场景。
+
+\subsubsection{1.2 需求分析}\label{header-n4577}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/1-0.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/1-1.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/2-0.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/2-1.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/3-0.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/3-1.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/4.png}
+\caption{}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/5.png}
+\caption{}
+\end{figure}
+
+\subsubsection{1.3 系统功能时序图}\label{header-n4594}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/UML.png}
+\caption{}
+\end{figure}
+
+\subsection{2. 模块及接口设计}\label{header-n4599}
+
+\subsubsection{2.1 项目结构}\label{header-n4600}
+
+\paragraph{2.1.1 Back-end 项目目录}\label{header-n4601}
+
+\begin{figure}
+\centering
+\includegraphics{https://ws4.sinaimg.cn/large/006tKfTcly1fnm6nuhminj30i00yytcl.jpg}
+\caption{}
+\end{figure}
+
+\paragraph{2.1.2 Back-end UML 图}\label{header-n4604}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/backend.png}
+\caption{}
+\end{figure}
+
+\subsubsection{2.2 模块设计}\label{header-n4607}
+
+\paragraph{2.2.1 admin 模块}\label{header-n4608}
+
+如下图，admin 模块包含
+
+\begin{itemize}
+\item
+  UserInfoAdmin
+\item
+  ProjectRegisterRelationshipAdmin
+\item
+  GroupAdmin
+\item
+  MembershipAdmin
+\item
+  CarouseAdmin
+\item
+  HallOfFameAdmin
+\item
+  SchoolTeamAdmin 
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/admin_py.png}
+\caption{}
+\end{figure}
+
+\paragraph{2.2.2 models 模块}\label{header-n4635}
+
+如下图，models 模块包含
+
+\begin{itemize}
+\item
+  User
+\item
+  UserInfo
+\item
+  Project
+\item
+  Project\_Register\_Relationship
+\item
+  Group
+\item
+  Membership
+\item
+  Carousel
+\item
+  HallOfFame
+\item
+  SchoolTeam
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/models_py.png}
+\caption{}
+\end{figure}
+
+\subsubsection{2.3 接口设计}\label{header-n4668}
+
+接口列表如下，各接口文档请点击链接访问项目 API wiki
+
+\begin{itemize}
+\item
+  register()
+\item
+  login()
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_submit.md}{user\_info\_submit()}
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_request.md}{user\_info\_request()}
+\item
+  project\_list\_display()
+\item
+  project\_card\_display()
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/project_info_request.md}{project\_info\_request()}
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/SER_Web/wikis/project_register.md}{project\_register()}
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/project_register_relationship_request.md}{project\_register\_relationship\_request()}
+\item
+  project\_grade\_request()
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/add_group.md}{add\_group()}
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/add_teammate.md}{add\_teammate()}
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/set_teammate_confirm.md}{set\_teammate\_confirm()}
+\item
+  \href{}{carousel\_request()}
+\item
+  \href{}{hall\_of\_fame\_request()}
+\item
+  \href{}{school\_team\_request()}
+\item
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/Usage_of_group_project_register_API.md}{group
+  project register API 使用流程}
+\end{itemize}
+
+\subsection{3. 数据库设计}\label{header-n4725}
+
+考虑到项目规模和目标使用人群数目，项目采用 Django 内置的 SQLite3
+作为数据库。数据库表和 Models 保持一致.
+
+\begin{figure}
+\centering
+\includegraphics{/Users/shian/OneDrive/SE/SERWeb_Doc/models_py.png}
+\caption{}
+\end{figure}
+
+\subsection{4. 开发者须知}\label{header-n4732}
+
+\subsubsection{4.1 搭建开发环境}\label{header-n4733}
+
+\paragraph{4.1.1 拉取开发环境}\label{header-n4734}
+
+\begin{itemize}
+\item
+  在 gitlab 拉取 SERWeb 项目 master 分支文件即可，git
+  相关操作如果不熟悉可以参考
+  \href{https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000}{廖雪峰Git教程}
+  或者其他教程。
+\item
+  如果使用 JetBrains 系的 IDE， 可以使用内置的 VCS
+  系统拉取代码，步骤参考
+  \href{https://www.jetbrains.com/pycharm/documentation/}{JetBrains
+  文档}。
+\end{itemize}
+
+\paragraph{4.1.2 运行开发环境}\label{header-n4743}
+
+\subparagraph{4.1.2.1 安装依赖}\label{header-n4744}
+
+运行开发环境依赖如下包：
+
+\begin{itemize}
+\item
+  node.js
+
+  \begin{itemize}
+  \item
+    安装方法\href{https://nodejs.org/en/download/package-manager/}{参考这里}
+  \end{itemize}
+\item
+  python 3.5.2 or later
+
+  \begin{itemize}
+  \item
+    django 1.11.5 or later
+  \item
+    django-cors-headers
+  \item
+    以上两个包均用 pip install
+
+\begin{verbatim}
+$ pip3 install django
+$ pip3 install django-cors-headers
+\end{verbatim}
+  \end{itemize}
+\item
+  Vue.js Cli
+
+\begin{verbatim}
+# 全局安装 vue-cli
+$ npm install --global vue-cli
+# 进入frontend文件夹，安装依赖
+$ cd .../SERWeb/SERWebProject/frontend
+$ npm install
+$ npm run dev
+\end{verbatim}
+\end{itemize}
+
+\subparagraph{4.1.2.2 前端开发环境}\label{header-n4773}
+
+\begin{itemize}
+\item
+  在 IDE 内置 terminal（或其他 terminal）内进入 SERWebProject/frontend
+  文件夹
+\item
+  输入命令 npm install
+\item
+  输入命令 npm run
+  dev，如果成功即可自动弹出前端开发环境（默认端口8080）。
+\item
+  前端开发环境支持所见即所得，可立即反映页面改动。
+
+\begin{verbatim}
+$ cd SERwebProject/frontend
+$ npm install
+$ npm run dev
+\end{verbatim}
+\end{itemize}
+
+\subparagraph{4.1.2.3 后端演示环境}\label{header-n4788}
+
+\begin{itemize}
+\item
+  在 IDE 内置 terminal（或其他 terminal）内进入 SERWebProject 文件夹
+\item
+  输入命令 python manage.pu runserver
+\item
+  打开浏览器输入 localhost:8000 即可看到后端演示环境（默认端口8000）。
+\item
+  后端演示环境不支持所见即所得，如果要反映页面改动需要重新
+  build，因此日常开发建议使用前端开发环境。
+
+\begin{verbatim}
+# 启动后端演示环境
+$ cd SERwebProject
+$ python manage.py runserver
+
+# 重新 build 后启动后端演示环境
+$ cd /SERwebProject/frontend
+$ npm run build
+$ cd ..
+$ python manage.py runserver
+\end{verbatim}
+\end{itemize}
+
+\subsection{5. 许可证信息}\label{header-n4805}
+
+\href{http://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics{https://i.creativecommons.org/l/by-nc/4.0/88x31.png}}
+
+This work is licensed under a
+\href{http://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons
+Attribution-NonCommercial 4.0 International License}.
+
+\end{document}

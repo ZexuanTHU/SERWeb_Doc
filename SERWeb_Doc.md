@@ -14,11 +14,27 @@
 
 ### 1.2 需求分析
 
+![1-0](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/1-0.png)
 
+![1-1](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/1-1.png)
 
-### 1.3 系统功能分析
+![2-0](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/2-0.png)
 
-![功能分析 UML 图](/Users/shian/OneDrive/SE/SERWeb_Doc/UML时序图.png)
+![2-1](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/2-1.png)
+
+![3-0](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/3-0.png)
+
+![3-1](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/3-1.png)
+
+![4](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/4.png)
+
+![5](/Users/shian/OneDrive/SE/SERWeb_Doc/demand_analysis/5.png)
+
+### 1.3 系统功能时序图
+
+![UML](/Users/shian/OneDrive/SE/SERWeb_Doc/pic/UML.png)
+
+</br>
 
 ## 2. 模块及接口设计
 
@@ -30,11 +46,11 @@
 
 #### 2.1.2 Back-end UML 图
 
-![backend](/Users/shian/OneDrive/SE/SERWeb_Doc/backend.png)
+![backend](/Users/shian/OneDrive/SE/SERWeb_Doc/pic/backend.png)
 
-### 2.1 模块设计
+### 2.2 模块设计
 
-### 2.1.1 admin 模块
+#### 2.2.1 admin 模块
 
 如下图，admin 模块包含 
 
@@ -52,9 +68,9 @@
 
 - SchoolTeamAdmin 
 
-![admin_py](/Users/shian/OneDrive/SE/SERWeb_Doc/admin_py.png)
+![admin_py](/Users/shian/OneDrive/SE/SERWeb_Doc/pic/admin_py.png)
 
-### 2.2.2 models 模块
+#### 2.2.2 models 模块
 
 如下图，models 模块包含
 
@@ -68,36 +84,39 @@
 - HallOfFame
 - SchoolTeam
 
-![models_py](/Users/shian/OneDrive/SE/SERWeb_Doc/models_py.png)
+![models_py](/Users/shian/OneDrive/SE/SERWeb_Doc/pic/models_py.png)
 
-## 2.2 接口设计
+### 2.3 接口设计
 
-接口列表如下，各接口文档请点击链接访问项目软工平台 Gitlab wiki
-
+接口列表如下，各接口文档请点击链接访问项目 API wiki
 - register()
 - login()
-- [user_info_submit()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/user-info-submit())
-- [user_info_request()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/user-info-request())
+- [user_info_submit()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_submit.md)
+- [user_info_request()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_request.md)
 - project_list_display()
 - project_card_display()
-- [project_info_request()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/project-info-request())
-- [project_register()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SER_Web/wikis/project-register())
-- [project_register_relationship_request()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/project-register-relationship-request())
+- [project_info_request()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/project_info_request.md)
+- [project_register()](https://github.com/ZexuanTHU/SERWeb_Doc/SER_Web/wikis/project_register.md)
+- [project_register_relationship_request()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/project_register_relationship_request.md)
 - project_grade_request()
-- [add_group()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/add-group())
-- [add_teammate()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/add-teammate())
-- [set_teammate_confirm()](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/set-teammate-confirm())
+- [add_group()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/add_group.md)
+- [add_teammate()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/add_teammate.md)
+- [set_teammate_confirm()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/set_teammate_confirm.md)
 - [carousel_request()]()
 - [hall_of_fame_request()]()
 - [school_team_request()]()
-- [group project register API 使用流程](http://47.94.142.165:8088/gitlab/PRJ2_GROUPCHAT/SERWeb/wikis/group-project-register-api-%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B)
 
+- [group project register API 使用流程](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/Usage_of_group_project_register_API.md)
+
+</br>
 
 ## 3. 数据库设计
 
 考虑到项目规模和目标使用人群数目，项目采用 Django 内置的 SQLite3 作为数据库。数据库表和 Models 保持一致.
 
-![models_py](/Users/shian/OneDrive/SE/SERWeb_Doc/models_py.png)
+![models_py](/Users/shian/OneDrive/SE/SERWeb_Doc/pic/models_py.png)
+
+</br>
 
 ## 4. 开发者须知
 
@@ -144,7 +163,6 @@
   $ npm run dev
   ```
 
-  ​
 
 ##### 4.1.2.2 前端开发环境
 
@@ -162,7 +180,6 @@
   $ npm run dev
   ```
 
-  ​
 
 ##### 4.1.2.3 后端演示环境
 
@@ -186,13 +203,7 @@
   $ python manage.py runserver
   ```
 
-  ​
-
-
-
-
-
-### 
+</br>
 
 ## 5. 许可证信息
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
