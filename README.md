@@ -24,4 +24,4 @@ Several [vivid diagrams](https://github.com/ZexuanTHU/SERWeb_Doc/tree/master/dem
 Several [pictures](https://github.com/ZexuanTHU/SERWeb_Doc/tree/master/pic) to describe the backend modules of the SERWeb project.
 
 ## Contact
-If you have any problems or feedbacks, please feel free to contact GROUPCHAT with <thugroupchat@gmail.com> or Zexuan with <ye-zx14@mails.tsinghua.edu.cn>
+If you have any problems or feedbacks, please feel free to contact GROUPCHAT with <thugroupchat@gmail.com> or Zexuan with <ye-zx14@mails.tsinghua.edu.cn>.
