@@ -2,7 +2,6 @@
 - register()
 - login()
 - [user_info_submit()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user-info-submit())
-https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/API_list.md
 - [user_info_request()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user-info-request())
 - project_list_display()
 - project_card_display()
