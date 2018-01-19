@@ -1,8 +1,10 @@
 # SERWeb_Doc
 
-This is the documentation repository of the [SERWeb project](https://github.com/ZexuanTHU/SERWeb)
+The documentation repository of the [SERWeb project](https://github.com/ZexuanTHU/SERWeb)
 
 ## DOCS
+It's the main documentation which contains all you need.
+
 We offered documentations for SERWeb Developers and Users in 5 different file types, which includes:
 - .pdf (recommended)
 - .html (recommended)
@@ -10,14 +12,16 @@ We offered documentations for SERWeb Developers and Users in 5 different file ty
 - .docx(autoconvert, styleless)
 - .latex(autoconvert, without test)
 
+Choose the most suitable one for you.
+
 ## API
-API list and usage guides for each interface in details.
+[API list](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/API_list.md) and usage guides for each interface in details.
 
-## demand_analysis
-Several vivid diagrams for demand analysis.
+## Demand_analysis
+Several [vivid diagrams](https://github.com/ZexuanTHU/SERWeb_Doc/tree/master/demand_analysis) to help you understand the demand analysis of this project.
 
-## pic
-Several pictures to describe the backend modules of the SERWeb project.
+## Pic
+Several [pictures](https://github.com/ZexuanTHU/SERWeb_Doc/tree/master/pic) to describe the backend modules of the SERWeb project.
 
-## CONTACT
+## Contact
 If you have any problems or feedbacks, please feel free to contact us with [email](thugroupchat@gmail.com)
