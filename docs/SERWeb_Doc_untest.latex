@@ -232,27 +232,27 @@ info
 \item
   login()
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_submit.md}{user\_info\_submit()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/user_info_submit.md}{user\_info\_submit()}
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_request.md}{user\_info\_request()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/user_info_request.md}{user\_info\_request()}
 \item
   project\_list\_display()
 \item
   project\_card\_display()
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/project_info_request.md}{project\_info\_request()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/project_info_request.md}{project\_info\_request()}
 \item
   \href{https://github.com/ZexuanTHU/SERWeb_Doc/SER_Web/wikis/project_register.md}{project\_register()}
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/project_register_relationship_request.md}{project\_register\_relationship\_request()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/project_register_relationship_request.md}{project\_register\_relationship\_request()}
 \item
   project\_grade\_request()
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/add_group.md}{add\_group()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/add_group.md}{add\_group()}
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/add_teammate.md}{add\_teammate()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/add_teammate.md}{add\_teammate()}
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/set_teammate_confirm.md}{set\_teammate\_confirm()}
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/set_teammate_confirm.md}{set\_teammate\_confirm()}
 \item
   \href{}{carousel\_request()}
 \item
@@ -260,7 +260,7 @@ info
 \item
   \href{}{school\_team\_request()}
 \item
-  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/Usage_of_group_project_register_API.md}{group
+  \href{https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/Usage_of_group_project_register_API.md}{group
   project register API 使用流程}
 \end{itemize}
 
