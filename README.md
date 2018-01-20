@@ -15,7 +15,7 @@ We offered documentations for SERWeb Developers and Users in 5 different file ty
 Choose the most suitable one for you, or you can click the download button on the header of this page for downloading the compressed documention archive.
 
 ## API
-[API list](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API_list.md) and usage guides for each interface in details.
+[API list](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/API/API_list.md) and usage guides for each interface in details.
 
 ## Demand_analysis
 Several [vivid diagrams](https://github.com/ZexuanTHU/SERWeb_Doc/tree/master/demand_analysis) to demonstrate the demand analysis of this project.
