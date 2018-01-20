@@ -1,4 +1,4 @@
-## 目前支持的 API 列表
+## Supported API list
 - register()
 - login()
 - [user_info_submit()](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/user_info_submit.md)
@@ -16,7 +16,9 @@
 - [hall_of_fame_request()]()
 - [school_team_request()]()
 
-## 已规划，尚未支持的 API 列表
+You can click above hyperlinks for the detailed usage guides of each interface.
 
-## API 说明 
+## Planned API list
+
+## Usage of group project register APIs 
 - [group project register API 使用流程](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/API/Usage_of_group_project_register_API.md)
