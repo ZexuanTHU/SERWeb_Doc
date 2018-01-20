@@ -3,7 +3,7 @@
 The documentation repository of the [SERWeb project](https://github.com/ZexuanTHU/SERWeb)
 
 ## DOCS
-It's the [main documentation](https://github.com/ZexuanTHU/SERWeb_Doc/blob/master/docs/SERWeb_Doc.md) which contains all you need.
+It's the [main documentation](https://zexuanthu.github.io/SERWeb_Doc/SERWeb_Doc.html) which contains all you need.
 
 We offered documentations for SERWeb Developers and Users in 5 different file types, which includes:
 - .pdf (recommended)
